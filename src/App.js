@@ -45,7 +45,7 @@ function App() {
     setError(''); // Clear any previous error message
 
     try {
-      const response = await fetch('https://backend-cpu-scheduler.onrender.com', {
+      const response = await fetch('//http://localhost:5000/execute', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
