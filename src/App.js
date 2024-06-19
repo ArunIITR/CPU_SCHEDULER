@@ -112,7 +112,7 @@ function App() {
                 type="text"
                 value={priorities}
                 onChange={(e) => setPriorities(e.target.value)}
-                placeholder="Ex: 1, 2, 3, 4 (Lower value means higher priority)"
+                placeholder="(Lower value means higher priority)"
               />
             </div>
             <div className="form-group">
