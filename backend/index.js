@@ -26,7 +26,7 @@ app.post('/execute', (req, res) => {
   fs.writeFileSync('input.txt', inputData);
 
   // Compile the C++ program
-  exec('g++ -o a.out your_script.cpp', (compileError, compileStdout, compileStderr) => {
+  exec('g++ -o a.out cpu_scheduler.cpp', (compileError, compileStdout, compileStderr) => {
     if (compileError) {
       console.error('Compilation error:', compileStderr);
       return res.status(500).json({ output: compileStderr });
